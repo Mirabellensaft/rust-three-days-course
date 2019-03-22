@@ -8,7 +8,7 @@ Overview
 
 ---
 
-## Rustup
+## Installing Rustup
 
 Rustup is the standard tool for managing Rusts compiler toolchain.
 
@@ -22,7 +22,7 @@ http://rustup.rs/
 
 ---
 
-# First Steps
+## First Steps
 
 Execute the following commands:
 
@@ -33,7 +33,7 @@ This loads the sources of the default library and documentation for completion a
 
 ## Functional Test
 
-<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/4.rs" data-trim="hljs rust"></code></pre>
+<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/04_hello_world.rs" data-trim="hljs rust"></code></pre>
 
 ---
 
@@ -41,80 +41,83 @@ This loads the sources of the default library and documentation for completion a
 
 ---
 
-declaring of variables, scope,
+Exercise: Rust, Basic Syntax.
+
+<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/04_hello_world.rs" data-trim="hljs rust"></code></pre>
 
 ---
 
-## wasm-pack
+## Installing the wasm Toolchain
 
-curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+wasm-pack
 
-## cargo-generate
+<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/03_rustwasm.sh" data-trim="hljs sh"></code></pre>
 
-cargo install cargo-generate
+cargo-generate
 
-## npm
+<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/03_cargo_generate.sh" data-trim="hljs sh"></code></pre>
 
-npm install npm@latest -g
+npm
+
+<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/04_npm_install.sh" data-trim="hljs sh"></code></pre>
+
 
 ---
 
-## Clone the Project Template
+Clone the project template:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/03_clone_project_template.sh" data-trim="hljs sh"></code></pre>
 
 New project name:
 
-
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/04_clone_project_template.sh" data-trim="hljs sh"></code></pre>
 
 ---
 
-## What's inside?
+## What's in the Directory?
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/05_root.sh" data-trim="hljs sh"></code></pre>
 
 ---
 
-## Build the Project
+Building the project:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/06_wasm_pack_build.sh" data-trim="hljs sh"></code></pre>
 
 
 * Ensures Rust 1.30 or newer and the wasm32-unknown-unknown target were installed via rustup
-* Compiles Rust sources into a WebAssembly .wasm binary via cargo
+* Compiles Rust sources into a WebAssembly <code class=inline>.wasm</code> binary via cargo
 * Use wasm-bindgen to generate the JavaScript API for using the Rust-generated WebAssembly
 
 
 ---
 
-What's inside pkg/?
+## What's inside pkg/?
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/07_pkg.sh" data-trim="hljs sh"></code></pre>
 
 ---
 
-## Putting it into a Web Page
-
+Putting it into a web page:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/08_npm_init_wasm.sh" data-trim="hljs sh"></code></pre>
 
 ---
 
-#What's inside www?
+## What's inside www/?
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/09_www.sh" data-trim="hljs sh"></code></pre>
 
 
 ---
 
-Install dependencies
+Install dependencies:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/10_npm_install.sh" data-trim="hljs sh"></code></pre>
 
 ---
 
-Using Local wasm-game-of-life Package in www
+Using local wasm-game-of-life package in /www:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/11_npm_link.sh" data-trim="hljs sh"></code></pre>
 
@@ -122,7 +125,7 @@ Using Local wasm-game-of-life Package in www
 
 ---
 
-Modify index.js to import wasm-game-of-life instead of the hello-wasm-pack package:
+Import wasm-game-of-life instead of the hello-wasm-pack package:
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/13_modify_index.js" data-trim="hljs js"></code></pre>
 
@@ -132,24 +135,21 @@ The Web page is now ready to be served locally!
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/14_npm_run_start.sh" data-trim="hljs sh"></code></pre>
 
-Navigate your Web browser to http://localhost:8080/
+Navigate your web browser to http://localhost:8080/
 
 ---
 
-Picture?
+Picture of output?
 
 ---
 
-Rust Syntax on Example
-
-<pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/00_syntax_on_example.rs" data-trim="hljs rust"></code></pre>
-
----
-
-
-Rebuild the `.wasm` binary with `wasm-pack build`, refresh http://localhost:8080/
+Exercise: Modifying the Greet Function.
 
 <pre><code data-source="chapters/shared/code/wasm_workshop/02_setup/00_syntax_on_example.rs"></code></pre>
+
+---
+
+Example of the Output.
 
 ---
 

@@ -53,6 +53,19 @@ html:-webkit-full-screen-ancestor {
 html:-moz-full-screen-ancestor {
   background-color: inherit; }
 
+  .inline {
+    font-family: monospace;
+    font-size: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+    background: #f1f1f1;
+    color: var(--inline-code-color);
+    }
+
+
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/

@@ -1,6 +1,17 @@
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+@media screen  {
+  .column {
+    width: 100%;
+  }
 
 h2 {
   font-family: monospace;
+  text-align: center;
 
 }
 h3 {
@@ -9,5 +20,5 @@ h3 {
 }
 
 div {
-  max-width: 500px;
+  max-width: 490px;
 }

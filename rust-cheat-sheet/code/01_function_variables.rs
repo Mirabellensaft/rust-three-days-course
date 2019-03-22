@@ -10,7 +10,7 @@ fn main() {
     let explicitly_typed: i32 = 1;
 
     // Function call
-    let some_value = add_them(some_value, explicitly_typed);
+    some_value = add_them(some_value, explicitly_typed);
 
     // Macro, note the !
     println!("{}", some_value)

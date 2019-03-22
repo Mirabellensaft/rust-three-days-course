@@ -28,6 +28,6 @@ Type definition for the universe: structs
 
 implement the universe
 
-<pre><code data-source="chapters/shared/code/wasm_workshop/03_game_of_life/5.rs" data-trim="hljs rust"></code></pre>
+<pre><code data-source="chapters/shared/code/wasm_workshop/03_game_of_life/6.rs" data-trim="hljs rust"></code></pre>
 
 ---
